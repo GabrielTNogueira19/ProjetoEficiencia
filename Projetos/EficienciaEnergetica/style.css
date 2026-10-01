@@ -62,12 +62,14 @@ nav a img {
 .inicioSite h1{
     grid-column: 1;
     margin: 20% 20% 0% 20%;
+    font-size: 50px;
     
 }
 
 .inicioSite h3{
     grid-column: 1;
     margin: 0% 20% 0% 20%;
+    font-size: 30px;
 }
 
 .inicioSite button{
@@ -86,12 +88,23 @@ nav a img {
     background-color: #fa9740;
 }
 
+.cardSobre button:hover {
+    background-color: #fa9740;
+}
+
+.card button:hover {
+    background-color: #fa9740;
+}
+
 .objetivoBox{
-    border-radius: 25px;
     margin: 0% 30% 0% 30%;
     min-height: 500px;
     border: 5px solid #F87400;
     background-color: #fffeee;
+}
+
+.objetivoBox h2{
+    font-size: 30px;
 }
 
 .objetivoBox h2, p{
@@ -99,10 +112,72 @@ nav a img {
 }
 
 .cardsProjetos{
+    border-radius: 25px;
     padding: 20px;
-    border: 5px solid #fffeee;
     background-color: #F87400;
     margin: 0% 10% 0% 10%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 10px 10px 5px black;
+}
+
+.card{
+    background-color: #fffeee;
+    border-radius: 20px;
+    min-height: 300px;
+    width: 30%;
+    border: 1px solid #000000;
+    margin: 2% 5% 2% 5%;
+    display: grid;
+    box-shadow: 5px 5px 5px black;
+}
+
+.card button{
+    grid-row: 5;
+    background-color: #F87400;
+    height: 35px;
+    width: 100px;
+    border: none; 
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5%;
+}
+
+.cardSobre{
+    background-color: #fffeee;
+    padding: 50px;
+    margin: 10% 20%;
+    display: grid;
+    box-shadow: 10px 10px 5px black;
+}
+
+.cardSobre h2{
+    font-size: 30px;
+}
+
+.cardSobre p{
+    grid-column: 1;
+}
+
+.cardSobre button{
+    grid-column: 1;
+    background-color: #F87400;
+    height: 35px;
+    width: 100px;
+    border: none; 
+    box-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cardParceiros{
+    
+}
+
+.cardParceiros h1{
+    
 }
 
 
@@ -131,4 +206,23 @@ nav a img {
     .objetivoBox{
     margin: 0% 10% 0% 10%;
     }
+
+    .cardsProjetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0% 10% 0% 10%;
+    }
+    .card{
+    background-color: #fffeee;
+    border-radius: 20px;
+    min-height: 300px;
+    min-width: 200px;
+    border: 1px solid #000000;
+    margin: 2% 5% 2% 5%;
+    }
+    .cardSobre button{
+    grid-column: 1;
+    }
 }
+

@@ -16,7 +16,7 @@ header {
     justify-content: center;
 }
 
-nav {
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +35,7 @@ h1, h2, h3{
     padding: 10px;
 }
 
-nav a {
+header nav a {
     color: #ffffff;
     text-decoration: none;
     background-color: #48484e;
@@ -44,13 +44,14 @@ nav a {
     font-size: 14px;
     text-align: center;
     border: 1px solid #707070;
+    
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: #38383e;
 }
 
-nav a img {
+header nav a img {
     height: 40px;
     display: block;
 }
@@ -115,9 +116,9 @@ nav a img {
     border-radius: 25px;
     padding: 20px;
     background-color: #F87400;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 15% 0% 15%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 10px;
     box-shadow: 10px 10px 5px black;
 }
@@ -126,9 +127,9 @@ nav a img {
     background-color: #fffeee;
     border-radius: 20px;
     min-height: 300px;
-    width: 30%;
+    min-width: 170px;
     border: 1px solid #000000;
-    margin: 2% 5% 2% 5%;
+    /* margin: 2% 2% 2% 2%; */
     display: grid;
     box-shadow: 5px 5px 5px black;
 }
@@ -173,11 +174,21 @@ nav a img {
 }
 
 .cardParceiros{
+    display: flex;
+    justify-content: center;
+    
     
 }
 
-.cardParceiros h1{
+.SENAI{
+    height: 50px;
+    margin: 10%;
     
+}
+
+footer{
+    height: 100px;
+    background-color:#58585e;
 }
 
 
@@ -223,6 +234,14 @@ nav a img {
     }
     .cardSobre button{
     grid-column: 1;
+    }
+    .cardSobre{
+    padding: 20px;
+    margin: 10% 10%;
+    ;
+    }
+    .logoMenu{
+        margin-left: 47%;
     }
 }
 

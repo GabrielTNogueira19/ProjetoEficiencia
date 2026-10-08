@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -99,7 +99,7 @@ header nav a img {
     border: none; 
     box-shadow: 5px 5px 5px black;
     cursor: pointer;
-    font-size: 14px;
+    /* font-size: 14px; */
 }
 
 .inicioSite button:hover {
@@ -139,33 +139,55 @@ header nav a img {
     padding: 10px;
     box-shadow: 10px 10px 5px black;
 }
-
-.card{
-    background-color: #fffeee;
+.card {
+    position: relative;
+    width: clamp(220px, 25vw, 300px);
+    aspect-ratio: 277 / 360;
     border-radius: 20px;
-    min-height: 300px;
-    min-width: 170px;
-    border: 1px solid #000000;
-    /* margin: 2% 2% 2% 2%; */
-    display: grid;
-    box-shadow: 5px 5px 5px black;
+    overflow: hidden;
+    border: 1px solid #000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover{
-    transform: translateY(-8px);
-    box-shadow: 10px 10px 10px black;
+.card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
 }
 
-.card button{
-    grid-row: 5;
-    background-color: #F87400;
-    height: 35px;
-    width: 100px;
-    border: none; 
-    box-shadow: 5px 5px 5px black;
+.card button {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    background-color:#fffeee;
+    color: #F87400;
+    min-width: 100px;
+    height: 38px;
+    padding: 0 15px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    font-size: 14px;
-    margin: 5%;
+    /* font-size: 14px; */
+    z-index: 1;
+}
+
+.card button:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.card button:active {
+    transform: translateY(-1px) scale(0.97);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
 }
 
 .cardSobre{
@@ -217,16 +239,58 @@ button:active {
   transform: translateY(-2px) scale(0.97);
 }
 
+button{
+    font-size: 15px;
+}
 
 
-/* .inicioSite figure{
-    grid-column: 2;
-    margin: 0% 00% 70% 0%;
-    
-} */
-
-/* Responsividade para celulares e tablets */
 @media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    nav a:nth-child(4) {
+        order: -1;
+    }
+
+    .objetivoBox{
+    margin: 0% 10% 0% 10%;
+    }
+
+    .cardsProjetos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: column; */
+    align-items: center;
+    margin: 0% 10% 0% 10%;
+    }
+    .card{
+    background-color: #fffeee;
+    border-radius: 20px;
+    min-height: 300px;
+    min-width: 200px;
+    border: 1px solid #000000;
+    margin: 2% 5% 2% 5%;
+    }
+    .cardSobre button{
+    grid-column: 1;
+    }
+    .cardSobre{
+    padding: 20px;
+    margin: 10% 10%;
+    ;
+    }
+    .logoMenu{
+        margin-left: 47%;
+    }
+}
+
+@media (max-width: 600px) {
     nav {
         flex-direction: column;
         gap: 12px;
@@ -270,4 +334,5 @@ button:active {
         margin-left: 47%;
     }
 }
+
 

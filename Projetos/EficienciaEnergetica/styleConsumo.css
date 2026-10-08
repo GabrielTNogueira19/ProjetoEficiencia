@@ -5,9 +5,27 @@
     font-family: Arial, sans-serif;
 }
 
-body{
+body {
     background-color: #4d4d4d;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
 }
+
+body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url('/EficienciaEnergetica/acess/img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 5%;
+    z-index: -1; 
+}
+
+
 
 header {
     width: 100%;
@@ -66,108 +84,76 @@ header nav a img {
     font-size: 50px;
     
 }
-.cardSobre button:hover {
-    background-color: #fa9740;
+
+.cardInformacao{
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.card button:hover {
-    background-color: #fa9740;
-}
-
-.objetivoBox{
-    margin: 0% 30% 0% 30%;
-    min-height: 500px;
-    border: 5px solid #F87400;
+.cardEquipamento{
     background-color: #fffeee;
+    padding: 2%;
+    margin: 5%;
+    grid-column: 1;
+    border: #F87400 2px solid;
+    box-shadow: 10px 10px 5px black ;
+}
+.cardConsumo{
+    background-color: #fffeee;
+    padding: 2%;
+    margin: 5%;
+    grid-column: 2;
+    border: #F87400 2px solid;
+    box-shadow: 10px 10px 5px black ;
+}
+.cardEquipamento h2{
+    margin: 2%;
+}
+.cardConsumo h2{
+    margin: 2%;
+}
+.cardEquipamento p{
+    margin: 5%;
+}
+.cardConsumo p{
+    margin: 0% 10% 0% 10%;
 }
 
-.objetivoBox h2{
-    font-size: 30px;
-}
-
-.objetivoBox h2, p{
-    padding: 20px;
-}
-
-.cardsProjetos{
-    border-radius: 25px;
-    padding: 20px;
-    background-color: #F87400;
-    margin: 0% 15% 0% 15%;
+.cardsExplicacao{
+    padding: 5%;
     display: flex;
     justify-content: space-evenly;
-    padding: 10px;
-    box-shadow: 10px 10px 5px black;
-}
-
-.card{
-    background-color: #fffeee;
-    border-radius: 20px;
-    min-height: 300px;
-    min-width: 170px;
-    border: 1px solid #000000;
-    /* margin: 2% 2% 2% 2%; */
-    display: grid;
-    box-shadow: 5px 5px 5px black;
-}
-
-.card button{
-    grid-row: 5;
-    background-color: #F87400;
-    height: 35px;
-    width: 100px;
-    border: none; 
-    box-shadow: 5px 5px 5px black;
-    cursor: pointer;
-    font-size: 14px;
     margin: 5%;
 }
 
-.cardSobre{
+#card{
+    height: 300px;
+    width: 300px;
     background-color: #fffeee;
-    padding: 50px;
-    margin: 10% 20%;
-    display: grid;
-    box-shadow: 10px 10px 5px black;
-}
-
-.cardSobre h2{
-    font-size: 30px;
-}
-
-.cardSobre p{
-    grid-column: 1;
-}
-
-.cardSobre button{
-    grid-column: 1;
-    background-color: #F87400;
-    height: 35px;
-    width: 100px;
-    border: none; 
-    box-shadow: 5px 5px 5px black;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.cardParceiros{
-    display: flex;
-    justify-content: center;
-    
+    /* margin: 5%; */
+    border-radius: 20px;
+    padding: 2%;
+    box-shadow: 10px 10px 5px black ;
     
 }
 
-.SENAI{
-    height: 50px;
-    margin: 10%;
-    
+#card p{
+    font-size: 12px;
 }
+#card h3{
+    font-size: 15px;
+}
+
 
 footer{
     height: 100px;
     background-color:#58585e;
 }
 
+button:active {
+  transform: translateY(-2px) scale(0.97);
+}
 
 
 /* .inicioSite figure{
@@ -191,32 +177,6 @@ footer{
         order: -1;
     }
 
-    .objetivoBox{
-    margin: 0% 10% 0% 10%;
-    }
-
-    .cardsProjetos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0% 10% 0% 10%;
-    }
-    .card{
-    background-color: #fffeee;
-    border-radius: 20px;
-    min-height: 300px;
-    min-width: 200px;
-    border: 1px solid #000000;
-    margin: 2% 5% 2% 5%;
-    }
-    .cardSobre button{
-    grid-column: 1;
-    }
-    .cardSobre{
-    padding: 20px;
-    margin: 10% 10%;
-    ;
-    }
     .logoMenu{
         margin-left: 47%;
     }

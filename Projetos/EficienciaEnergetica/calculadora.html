@@ -25,7 +25,7 @@
         <section id="inicioCalculadora" class="inicio">
             <h1>Calculadora de <br>Consumo Energético</h1>
             <h3>DevsDoZero</h3>
-            <button>Ir Para Calculadora-></button>
+            <a href="#calculadora"><button>Ir Para Calculadora-></button></a>
 
             <article class="cardDescricao">
                 <h2>Ideia da Calculadora</h2>
@@ -40,6 +40,7 @@
 
         <section id="calculadora" class="cardCalculadora">
             <h2>Calculadora</h2>
+            
 
             <form>
                 <label for="potencia">Potência(Watts)</label>
@@ -54,10 +55,11 @@
                 <label for="tarifa">Tarifa da Concessionária (R$/k)</label>
                 <input type="number" id="tarifa" name="tarifa"><br>
 
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem"></textarea><br>
+                <button type="submit" class="botao2">Realizar Calculo</button>
 
-                <button type="submit">Enviar Mensagem</button>
+                <p>Resultado <br> O resultado será exibido aqui!</p>
+
+                <button type="submit" class="botao">Exportar PDF</button>
             </form>
         </section>
 
@@ -79,9 +81,12 @@
             <article class="areaAcesso">
                 <h3>Acessar Email</h3>
 
-                <a href="gmail.com">gmail</a>
-                <a href="outlook.com">outlook</a>
-                <a href="yahoot.com">yahoot</a>
+                <br>
+                <br>
+
+                <a href="https://mail.google.com/mail/u/0/"><img src="/EficienciaEnergetica/acess/gmail.webp" alt="" class="gmail"></a>
+                <a href="https://www.microsoft.com/pt-br/microsoft-365/outlook/log-in"><img src="/EficienciaEnergetica/acess/outlook.webp" alt="" class="outlook"></a>
+                <a href="https://br.mobile.yahoo.com/mail"><img src="/EficienciaEnergetica/acess/yahoot.webp" alt="" class="yahoot"></a>
             </article>
         </section>
     </main>

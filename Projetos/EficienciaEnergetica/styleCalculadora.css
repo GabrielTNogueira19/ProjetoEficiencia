@@ -46,6 +46,20 @@ header nav {
     border: 1px solid rgb(255, 255, 160);
 }
 
+h1{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 20ch; /* 26 caracteres */
+    border-right: 3px solid #fbff00;
+    animation:
+        digita 3s steps(20) infinite alternate,
+        pisca 0.6s step-end infinite;
+    }
+    @keyframes digita { from { width: 0; } }
+    @keyframes pisca {
+    50% { border-color: transparent; }
+}
+
 h1, h2, h3{
     color: #F87400;
     padding: 10px;
@@ -106,101 +120,125 @@ header nav a img {
     background-color: #fa9740;
 }
 
-.cardSobre button:hover {
-    background-color: #fa9740;
-}
-
-.card button:hover {
-    background-color: #fa9740;
-}
-
-.objetivoBox{
-    margin: 0% 30% 0% 30%;
-    min-height: 500px;
-    border: 5px solid #F87400;
+.cardDescricao{
+    display: flex;
     background-color: #fffeee;
+    margin: 0% 25% 20%;
+    padding: 20px;
+    align-items: center;
+
+    
 }
 
-.objetivoBox h2{
+.cardDescricao p {
+    margin: 2%;
+    font-size: 20px;
+}
+
+.cardDescricao img{
+    background-color: #707070;
+    min-height: 200px;
+    min-width: 300px;
+    margin: 2%;
+}
+
+.cardCalculadora{
+    background-color: #F87400;
+    margin: 10% 30%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.cardCalculadora h2{
+    color: #000000;
+    margin: 2%;
     font-size: 30px;
 }
 
-.objetivoBox h2, p{
-    padding: 20px;
+.botao2{
+    background-color: white;
+    border-color: #fa9740;
+    width: 40%;
+    padding: 15px;
 }
 
-.cardsProjetos{
-    border-radius: 25px;
-    padding: 20px;
-    background-color: #F87400;
-    margin: 0% 15% 0% 15%;
+.cardCalculadora p{
+    background-color: white;
+    padding: 100px;
+    margin-top: 5%;
+}
+
+form{
     display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    box-shadow: 10px 10px 5px black;
-}
-
-.card{
-    background-color: #fffeee;
-    border-radius: 20px;
-    min-height: 300px;
-    min-width: 170px;
-    border: 1px solid #000000;
-    /* margin: 2% 2% 2% 2%; */
-    display: grid;
-    box-shadow: 5px 5px 5px black;
-}
-
-.card button{
-    grid-row: 5;
-    background-color: #F87400;
-    height: 35px;
-    width: 100px;
-    border: none; 
-    box-shadow: 5px 5px 5px black;
-    cursor: pointer;
-    font-size: 14px;
+    flex-direction: column;
     margin: 5%;
 }
 
-.cardSobre{
-    background-color: #fffeee;
-    padding: 50px;
-    margin: 10% 20%;
-    display: grid;
-    box-shadow: 10px 10px 5px black;
+input, textarea{
+    padding: 10px;
+    border: none;
 }
 
-.cardSobre h2{
-    font-size: 30px;
+label{
+    background-color: white;
+    padding: 5px;
 }
 
-.cardSobre p{
-    grid-column: 1;
-}
-
-.cardSobre button{
-    grid-column: 1;
+.botao{
     background-color: #F87400;
-    height: 35px;
-    width: 100px;
-    border: none; 
-    box-shadow: 5px 5px 5px black;
-    cursor: pointer;
-    font-size: 14px;
+    border: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+    
 }
 
-.cardParceiros{
+.enviarEmail{
+    background-color: #fffeee;
+    margin: 20%;
+    padding: 20px;
+    display: grid;
+}
+
+.areaEmail{
+    background-color: #F87400;
+    grid-column: 1;
+    margin: 5%;
+}
+
+.areaAcesso{
+    grid-column: 2;
+    /* border: #000000 1px solid; */
+    text-align: center;
+    margin: 5%;
     display: flex;
-    justify-content: center;
-    
-    
+    flex-direction: column;
 }
 
-.SENAI{
+.gmail{
     height: 50px;
-    margin: 10%;
-    
+}
+.outlook{
+    height: 70px;
+}
+.yahoot{
+    height: 50px;
+}
+
+.areaEmail button{
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+}
+
+
+.enviarEmail h2{
+    margin: 2%;
+}
+
+button:hover {
+    background-color: #ffa45a;
+    transform: translateY(-3px);
 }
 
 footer{
@@ -219,7 +257,6 @@ button:active {
     
 } */
 
-/* Responsividade para celulares e tablets */
 @media (max-width: 900px) {
     nav {
         flex-direction: column;
@@ -262,6 +299,20 @@ button:active {
     }
     .logoMenu{
         margin-left: 47%;
+    }
+
+    .cardCalculadora{
+        margin: 20%;
+    }
+
+    .gmail{
+    height: 30px;
+    }
+    .outlook{
+        height: 50px;
+    }
+    .yahoot{
+        height: 30px;
     }
 }
 

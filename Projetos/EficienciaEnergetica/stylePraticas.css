@@ -47,6 +47,20 @@ header nav {
     border: 1px solid rgb(255, 255, 160);
 }
 
+h1{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 26ch; /* 26 caracteres */
+    border-right: 3px solid #fbff00;
+    animation:
+        digita 3s steps(26) infinite alternate,
+        pisca 3s step-end infinite;
+    }
+    @keyframes digita { from { width: 0; } }
+    @keyframes pisca {
+    50% { border-color: transparent; }
+}
+
 h1, h2{
     color: #F87400;
     padding: 10px;

@@ -47,6 +47,20 @@ header nav {
     border: 1px solid rgb(255, 255, 160);
 }
 
+h1{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 26ch; /* 26 caracteres */
+    border-right: 3px solid #fbff00;
+    animation:
+        digita 3s steps(26) infinite alternate,
+        pisca 0.6s step-end infinite;
+    }
+    @keyframes digita { from { width: 0; } }
+    @keyframes pisca {
+    50% { border-color: transparent; }
+}
+
 h1, h2, summary{
     color: #F87400;
     padding: 10px;
@@ -118,6 +132,7 @@ header nav a img {
 input, textarea{
     border: 2px solid#807f72;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .Email button{
@@ -133,9 +148,9 @@ input, textarea{
 
 .enviarEmail{
     background-color: #F87400;
-    width: 40%;
+    width: 50%;
     /* height: 500px; */
-    min-width: 40%;
+    min-width: 50%;
     padding: 30px;
     border-radius: 20px;
     margin-left: 10%;
@@ -166,6 +181,7 @@ input, textarea{
 
 .experiencia p{
     margin: 2%;
+    font-size: 20px;
 }
 
 .experiencia button{
@@ -208,22 +224,35 @@ footer{
   width: 100%;
   border: none;
 }
-.estrelas input { position: absolute; opacity: 0; }
+
+.estrelas input { 
+    position: absolute; opacity: 0;
+}
+
 .estrelas label {
   font-size: 70px;
   color: #CBD5E1;
   cursor: pointer;
   transition: 0.15s;
 }
-/* pinta a estrela E as anteriores */
-label:hover, label:hover ~ label,
-input:checked ~ label {
+
+.estrelas label:hover, .estrelas label:hover ~ label,
+.estrelas input:checked ~ label {
   color: #F59E0B;
+}
+
+hr{
+    margin: 5%;
+}
+
+::selection {
+  background: #fdb16e;
+  color: #431407;
 }
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     nav {
         flex-direction: column;
         gap: 12px;
@@ -241,14 +270,17 @@ input:checked ~ label {
     }
 
     .enviarEmail{
-    background-color: #F87400;
     width: 90%;
     /* height: 500px; */
     min-width: 350px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     margin: 2%;
-}
+    }
+
+    .estrelas label {
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -291,5 +323,9 @@ input:checked ~ label {
         height: 400px;
         margin: 5%;
         border-radius: 20px;
+    }
+    
+    .estrelas label {
+        font-size: 50px;
     }
 }

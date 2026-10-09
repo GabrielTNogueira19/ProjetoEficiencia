@@ -45,6 +45,20 @@ header nav {
     border: 1px solid rgb(255, 255, 160);
 }
 
+h1{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 26ch; /* 26 caracteres */
+    border-right: 3px solid #fbff00;
+    animation:
+        digita 3s steps(26) infinite alternate,
+        pisca 0.6s step-end infinite;
+    }
+    @keyframes digita { from { width: 0; } }
+    @keyframes pisca {
+    50% { border-color: transparent; }
+}
+
 h1, h2, h3{
     color: #F87400;
     padding: 10px;
@@ -103,26 +117,6 @@ header nav a img {
     border: #F87400 3px solid;
 }
 
-.nossaEquipe strong{
-    position: absolute; 
-    bottom: 10px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    display: flex; 
-    align-items: center; 
-    background-color:#F87400; 
-    color: #fffeee; 
-    min-width: 100px; 
-    max-width: 90%;
-    padding: 8px 15px;  
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); 
-    font-size: 18px; 
-    text-align: center; 
-    white-space: nowrap; 
-    z-index: 1;
-    font-size: 12px
-}
-
 .cards{
     border-radius: 25px;
     padding: 20px;
@@ -160,6 +154,16 @@ header nav a img {
     box-shadow: none;
 }
 
+.objetivoFinal{
+    background-color: #fffeee;
+    margin: 10%;
+    padding: 20px;
+}
+
+.objetivoFinal p{
+    margin: 2%;
+    font-size: 20px;
+}
 
 .membro:hover {
     transform: translateY(-8px);
@@ -175,11 +179,24 @@ button:active {
   transform: translateY(-2px) scale(0.97);
 }
 
+.foto figcaption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 14px;
+  color: white;
+  background:#6d3301;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.foto:hover figcaption {
+  transform: translateY(0);
+  z-index: 1;
+}
 
 /* .inicioSite figure{
     grid-column: 2;
     margin: 0% 00% 70% 0%;
-    
 } */
 
 @media (max-width: 900px) {

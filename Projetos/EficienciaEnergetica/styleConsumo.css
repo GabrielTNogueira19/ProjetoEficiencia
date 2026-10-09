@@ -48,6 +48,20 @@ header nav {
     border: 1px solid rgb(255, 255, 160);
 }
 
+h1{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 26ch; /* 26 caracteres */
+    border-right: 3px solid #fbff00;
+    animation:
+        digita 3s steps(26) infinite alternate,
+        pisca 0.6s step-end infinite;
+    }
+    @keyframes digita { from { width: 0; } }
+    @keyframes pisca {
+    50% { border-color: transparent; }
+}
+
 h1, h2, h3{
     color: #F87400;
     padding: 10px;
@@ -96,15 +110,16 @@ header nav a img {
     padding: 2%;
     margin: 5%;
     grid-column: 1;
-    border: #F87400 2px solid;
+    border: #F87400 10px inset;
     box-shadow: 10px 10px 5px black ;
+    /* border-style: ; */
 }
 .cardConsumo{
     background-color: #fffeee;
     padding: 2%;
     margin: 5%;
     grid-column: 2;
-    border: #F87400 2px solid;
+    border: #F87400 10px inset;
     box-shadow: 10px 10px 5px black ;
 }
 .cardEquipamento h2{
@@ -154,7 +169,6 @@ footer{
 button:active {
   transform: translateY(-2px) scale(0.97);
 }
-
 
 /* .inicioSite figure{
     grid-column: 2;

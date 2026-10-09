@@ -123,9 +123,11 @@ header nav a img {
 
 .objetivoBox h2{
     font-size: 30px;
+    padding: 20px;
 }
 
-.objetivoBox h2, p{
+.objetivoBox p{
+    font-size: 20px;
     padding: 20px;
 }
 
@@ -134,9 +136,9 @@ header nav a img {
     padding: 20px;
     background-color: #F87400;
     margin: 0% 15% 0% 15%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    /* justify-content: space-evenly; */
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    justify-content: space-evenly;
     padding: 10px;
     box-shadow: 10px 10px 5px black;
 }
@@ -205,6 +207,7 @@ header nav a img {
 
 .cardSobre p{
     grid-column: 1;
+    margin: 2%;
 }
 
 .cardSobre button{
@@ -260,30 +263,26 @@ button{
     }
 
     .objetivoBox{
-    margin: 0% 10% 0% 10%;
+        margin: 0% 10% 0% 10%;
     }
 
     .cardsProjetos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    /* flex-direction: column; */
-    align-items: center;
-    margin: 0% 10% 0% 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 0% 10% 0% 10%;
     }
     .card{
-    background-color: #fffeee;
-    border-radius: 20px;
-    min-height: 300px;
-    min-width: 200px;
-    border: 1px solid #000000;
-    margin: 2% 5% 2% 5%;
+        min-height: 300px;
+        min-width: 200px;
+        margin: 2% 5% 2% 5%;
     }
     .cardSobre button{
-    grid-column: 1;
+        grid-column: 1;
     }
     .cardSobre{
-    padding: 20px;
-    margin: 10% 10%;
+        padding: 20px;
+        margin: 10% 10%;
     ;
     }
     .logoMenu{
@@ -310,26 +309,22 @@ button{
     }
 
     .cardsProjetos{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    /* flex-direction: column; */
-    align-items: center;
-    margin: 0% 10% 0% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0% 10% 0% 10%;
     }
     .card{
-    background-color: #fffeee;
-    border-radius: 20px;
-    min-height: 300px;
-    min-width: 200px;
-    border: 1px solid #000000;
-    margin: 2% 5% 2% 5%;
+        min-height: 300px;
+        min-width: 200px;
+        margin: 2% 5% 2% 5%;
     }
     .cardSobre button{
-    grid-column: 1;
+        grid-column: 1;
     }
     .cardSobre{
-    padding: 20px;
-    margin: 10% 10%;
+        padding: 20px;
+        margin: 10% 10%;
     ;
     }
     .logoMenu{

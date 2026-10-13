@@ -100,22 +100,34 @@ header nav a img {
     display: grid;
 }
 
-.inicioSite h1{
+.inicioSite h1 {
     grid-column: 1;
-    margin: 20% 20% 0% 20%;
+    margin: 20% 20% 0 20%;
     font-size: 50px;
     white-space: nowrap;
+    width: 20ch;
+    max-width: calc(100% - 40px);
     overflow: hidden;
-    width: 20ch; 
     border-right: 3px solid #fbff00;
     animation:
-        digita 3s steps(26) infinite alternate,
+        digita 3s steps(20) infinite alternate,
         pisca 0.6s step-end infinite;
+}
+
+@keyframes digita {
+    from {
+        clip-path: inset(0 100% 0 0);
     }
-    @keyframes digita { from { width: 0; } }
-    @keyframes pisca {
-    50% { border-color: transparent; }
-    
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes pisca {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .inicioSite h3{
@@ -198,7 +210,7 @@ header nav a img {
 
 .card button {
     position: absolute;
-    left: 15px;
+    left: 0px;
     bottom: 20px;
     background-color:#fffeee;
     color: #F87400;
@@ -206,10 +218,8 @@ header nav a img {
     height: 38px;
     padding: 0 15px;
     border: none;
-    border-radius: 10px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    /* font-size: 14px; */
     z-index: 1;
 }
 
@@ -254,19 +264,6 @@ header nav a img {
     box-shadow: 5px 5px 5px black;
     cursor: pointer;
     font-size: 14px;
-}
-
-.cardParceiros{
-    display: flex;
-    justify-content: center;
-    
-    
-}
-
-.SENAI{
-    height: 50px;
-    margin: 10%;
-    
 }
 
 footer{
@@ -326,6 +323,14 @@ button{
     .carrosel{
         opacity: 30%;
     }
+
+    .inicioSite h1{
+        font-size: clamp(24px, 5vw, 50px);
+    }
+
+    .inicioSite h3{
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -367,6 +372,24 @@ button{
     }
     .logoMenu{
         margin-left: 47%;
+    }
+
+    .inicioSite{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicioSite button{
+        margin: 0% 0% 20%;
+    }
+
+    .inicioSite h1{
+        font-size: clamp(24px, 5vw, 50px);
+    }
+
+    .inicioSite h3{
+        font-size: 15px;
     }
 }
 

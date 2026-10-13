@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +23,7 @@ body::before {
     background-size: cover;
     background-position: center;
     opacity: 5%;
-    z-index: -1; 
+    z-index: -1;
 }
 
 header {
@@ -46,21 +47,39 @@ header nav {
     border: 1px solid rgb(255, 255, 160);
 }
 
-h1{
+h1 {
+    grid-column: 1;
+    margin: 20% 20% 0 20%;
+    font-size: 50px;
     white-space: nowrap;
+    width: 20ch;
+    max-width: calc(100% - 40px);
     overflow: hidden;
-    width: 20ch; /* 26 caracteres */
     border-right: 3px solid #fbff00;
     animation:
         digita 3s steps(20) infinite alternate,
         pisca 0.6s step-end infinite;
-    }
-    @keyframes digita { from { width: 0; } }
-    @keyframes pisca {
-    50% { border-color: transparent; }
 }
 
-h1, h2, h3{
+@keyframes digita {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes pisca {
+    50% {
+        border-color: transparent;
+    }
+}
+
+h1,
+h2,
+h3 {
     color: #F87400;
     padding: 10px;
 }
@@ -74,7 +93,6 @@ header nav a {
     font-size: 14px;
     text-align: center;
     border: 1px solid #707070;
-    
 }
 
 header nav a:hover {
@@ -86,127 +104,125 @@ header nav a img {
     display: block;
 }
 
-.inicio{
+.inicio {
     display: grid;
 }
 
-.inicio h1{
+.inicio h1 {
     grid-column: 1;
     margin: 20% 20% 0% 20%;
     font-size: 50px;
-    
 }
 
-.inicio h3{
+.inicio h3 {
     grid-column: 1;
     margin: 0% 20% 0% 20%;
     font-size: 30px;
 }
 
-.inicio button{
+.inicio button {
     grid-column: 1;
     margin: 0% 20% 15% 20.5%;
     background-color: #F87400;
     height: 35px;
     width: 200px;
-    border: none; 
+    border: none;
     box-shadow: 5px 5px 5px black;
     cursor: pointer;
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+        'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .inicio button:hover {
     background-color: #fa9740;
 }
 
-.cardDescricao{
+.cardDescricao {
     display: flex;
     background-color: #fffeee;
-    margin: 0% 25% 20%;
+    margin: 0% 15% 20%;
     padding: 20px;
     align-items: center;
-
-    
 }
 
 .cardDescricao p {
-    margin: 2%;
+    margin: 5%;
     font-size: 20px;
 }
 
-.cardDescricao img{
+.cardDescricao img {
     background-color: #707070;
     min-height: 200px;
     min-width: 300px;
     margin: 2%;
 }
 
-.cardCalculadora{
+.cardCalculadora {
     background-color: #F87400;
     margin: 10% 30%;
     padding: 30px;
     border-radius: 20px;
 }
 
-.cardCalculadora h2{
+.cardCalculadora h2 {
     color: #000000;
     margin: 2%;
     font-size: 30px;
 }
 
-.botao2{
+.botao2 {
     background-color: white;
     border-color: #fa9740;
     width: 40%;
     padding: 15px;
 }
 
-.cardCalculadora p{
+.cardCalculadora p {
     background-color: white;
     padding: 100px;
     margin-top: 5%;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     margin: 5%;
 }
 
-input, textarea{
+input,
+textarea {
     padding: 10px;
     border: none;
 }
 
-label{
+label {
     background-color: white;
     padding: 5px;
 }
 
-.botao{
+.botao {
     background-color: #F87400;
     border: 0;
     width: 100%;
     padding: 15px;
     z-index: 1;
-    
 }
 
-.enviarEmail{
+.enviarEmail {
     background-color: #fffeee;
     margin: 20%;
     padding: 20px;
     display: grid;
 }
 
-.areaEmail{
+.areaEmail {
     background-color: #F87400;
     grid-column: 1;
     margin: 5%;
 }
 
-.areaAcesso{
+.areaAcesso {
     grid-column: 2;
     /* border: #000000 1px solid; */
     text-align: center;
@@ -215,24 +231,25 @@ label{
     flex-direction: column;
 }
 
-.gmail{
-    height: 50px;
-}
-.outlook{
-    height: 70px;
-}
-.yahoot{
+.gmail {
     height: 50px;
 }
 
-.areaEmail button{
+.outlook {
+    height: 70px;
+}
+
+.yahoot {
+    height: 50px;
+}
+
+.areaEmail button {
     padding: 10px;
     background-color: #ffffff;
     border: none;
 }
 
-
-.enviarEmail h2{
+.enviarEmail h2 {
     margin: 2%;
 }
 
@@ -241,21 +258,21 @@ button:hover {
     transform: translateY(-3px);
 }
 
-footer{
+footer {
     height: 100px;
-    background-color:#58585e;
+    background-color: #58585e;
 }
 
 button:active {
-  transform: translateY(-2px) scale(0.97);
+    transform: translateY(-2px) scale(0.97);
 }
 
-
-/* .inicioSite figure{
+/*
+.inicioSite figure {
     grid-column: 2;
     margin: 0% 00% 70% 0%;
-    
-} */
+}
+*/
 
 @media (max-width: 900px) {
     nav {
@@ -271,48 +288,72 @@ button:active {
         order: -1;
     }
 
-    .objetivoBox{
-    margin: 0% 10% 0% 10%;
+    .cardDescricao {
+        flex-direction: column;
+        margin: 0% 15% 20%;
     }
 
-    .cardsProjetos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0% 10% 0% 10%;
+    .cardDescricao img{
+        min-width: 50%;
     }
-    .card{
-    background-color: #fffeee;
-    border-radius: 20px;
-    min-height: 300px;
-    min-width: 200px;
-    border: 1px solid #000000;
-    margin: 2% 5% 2% 5%;
-    }
-    .cardSobre button{
-    grid-column: 1;
-    }
-    .cardSobre{
-    padding: 20px;
-    margin: 10% 10%;
-    ;
-    }
-    .logoMenu{
+
+    .logoMenu {
         margin-left: 47%;
     }
 
-    .cardCalculadora{
-        margin: 20%;
+    .cardCalculadora {
+        margin: 5%;
     }
 
-    .gmail{
-    height: 30px;
-    }
-    .outlook{
-        height: 50px;
-    }
-    .yahoot{
+    .gmail {
         height: 30px;
+        margin: 0% 5%;
+    }
+
+    .outlook {
+        height: 30px;
+        margin: 0% 5%;
+    }
+
+    .yahoot {
+        height: 30px;
+        margin: 0% 5%;
+    }
+
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicio button{
+        margin: 0% 0% 20%;
+    }
+
+    .inicio h1{
+        font-size: clamp(24px, 5vw, 50px);
+    }
+
+    .inicio h3{
+        font-size: 15px;
+    }
+
+    .enviarEmail {
+        display: flex;
+        flex-direction: column;
+        margin: 20% 5%;
+    }
+
+    .areaAcesso{
+       display: grid;
+    }
+
+    .areaAcesso h3{
+        grid-row: 1;
+    }
+
+    .icons{
+        grid-row: 2;
     }
 }
-

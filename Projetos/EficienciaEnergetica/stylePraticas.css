@@ -48,17 +48,30 @@ header nav {
 }
 
 h1{
+   grid-column: 1;
+    margin: 20% 20% 20% 20%;
+    font-size: 50px;
     white-space: nowrap;
+    width: 16ch;
+    max-width: calc(100% - 40px);
     overflow: hidden;
-    width: 26ch; /* 26 caracteres */
     border-right: 3px solid #fbff00;
     animation:
-        digita 3s steps(26) infinite alternate,
-        pisca 3s step-end infinite;
+        digita 3s steps(16) infinite alternate,
+        pisca 0.6s step-end infinite;
+}
+@keyframes digita {
+    from {
+        clip-path: inset(0 100% 0 0);
     }
-    @keyframes digita { from { width: 0; } }
-    @keyframes pisca {
-    50% { border-color: transparent; }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+@keyframes pisca {
+    50% {
+        border-color: transparent;
+    }
 }
 
 h1, h2{
@@ -86,25 +99,170 @@ header nav a img {
     display: block;
 }
 
+.mapa{
+    width: 100%;
+    padding: 0 20px;
+    margin: 30px auto;
+}
+
+.mapa figure{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.mapa img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 
 .inicioC{
     display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 410px);
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 30px auto 50px;
+    padding: 0 24px;
 }
 
 .inicioC h1{
-    grid-column: 1;
-    margin: 20% 20% 0% 20%;
-    font-size: 50px;
-    
+    grid-column: auto;
+    width: auto;
+    max-width: 100%;
+    margin: 0;
+    font-size: clamp(32px, 4vw, 50px);
+    white-space: normal;
 }
 
 .inicioC h2{
-    grid-column: 1;
-    margin: 0% 20% 20% 20%;
-    font-size: 30px;
+    grid-column: auto;
+    margin: 0 0 28px;
+    font-size: clamp(24px, 3vw, 30px);
 }
 
+.textoObjetivo{
+    width: 100%;
+    max-width: 370px;
+    min-width: 0;
+    min-height: 380px;
+    margin: 0;
+    padding: 24px 18px;
+    background-color: #fffeee;
+    border-radius: 20px;
+    border: 2px solid #F87400;
+    box-shadow: 0 10px 20px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
-button:active {
-  transform: translateY(-2px) scale(0.97);
+.textoObjetivo h2{
+    margin: 0px 0px 28px;
+    padding: 0;
+    font-size: clamp(24px, 3vw, 30px);
+    text-align: center;
+}
+
+.textoObjetivo p{
+    color: #383838;
+    font-size: clamp(17px, 2vw, 19px);
+    line-height: 1.7;
+}
+
+.cardsResumo{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(12px, 3vw, 30px);
+    padding: 20px;
+    margin: 0;
+}
+
+.resumo{
+    min-height: 190px;
+    width: 100%;
+    background-color: #fffeee;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 4px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.resumo p{
+    color: #383838;
+    font-size: clamp(13px, 1.5vw, 17px);
+    line-height: 1.5;
+}
+
+.resumo h3{
+    color: #F87400;
+    font-size: clamp(17px, 1.9vw, 22px);
+    padding: 0 0 8px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    nav a:nth-child(4) {
+        order: -1;
+    }
+
+    .logoMenu{
+        margin-left: 47%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .inicioC{
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
+        gap: 24px;
+        margin: 24px auto 40px;
+    }
+
+    .inicioC h1{
+        justify-self: start;
+        font-size: clamp(30px, 8vw, 42px);
+    }
+
+    .textoObjetivo{
+        width: 100%;
+        max-width: 370px;
+        min-height: 290px;
+    }
+}
+
+@media (max-width: 420px) {
+    .cardsResumo{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        padding: 14px;
+    }
+
+    .resumo{
+        min-height: 170px;
+        padding: 7px;
+        border-width: 7px;
+    }
+}
+
+@media (max-width: 300px) {
+    .cardsResumo{
+        grid-template-columns: minmax(0, 1fr);
+    }
 }

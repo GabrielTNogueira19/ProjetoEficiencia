@@ -168,6 +168,10 @@ input, textarea{
     margin: 10%;
 }
 
+.enviarEmail h3{
+    font-size: 30px;
+}
+
 .enviarEmail h3, input, textarea, label, button{
     margin: 2%;
 }
@@ -185,6 +189,7 @@ input, textarea{
 
 .imagem{
     grid-column: 1;
+    margin-left: 25%;
 }
 
 .experiencia{

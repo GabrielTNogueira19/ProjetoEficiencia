@@ -72,7 +72,7 @@ header nav a img {
     display: block;
 }
 
-.mapa{
+/* .mapa{
     width: 100%;
     padding: 0 clamp(8px, 2vw, 20px);
     margin: clamp(16px, 3vw, 30px) auto;
@@ -81,7 +81,7 @@ header nav a img {
 .mapa figure{
     width: min(100%, 900px);
     margin: 0 auto;
-}
+} */
 
 .mapa img{
     display: block;
@@ -89,13 +89,6 @@ header nav a img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
-}
-
-@media (max-width: 480px) {
-    .mapa{
-        padding: 0 8px;
-        margin: 16px auto;
-    }
 }
 
 .inicioC{
@@ -171,8 +164,8 @@ header nav a img {
     background-color: #fffeee;
     border: 2px #ff7700 solid;
     border-radius: 20px;
-    margin: 0% 15% 10%; Thank you.
-    padding: 1%;
+    margin: 0% 15% 10%;
+    padding: 2%;
 }
 
 .alerta p{
@@ -189,13 +182,14 @@ header nav a img {
     background-color: #F87400;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 12px;
+    gap: 25px;
     box-shadow: 10px 10px 5px black;
+    margin: 15% 0%;
 }
 
 .cardInformacao{
     background-color: #fffeee;
-    margin: 0;
+    margin: 10% 0%;
     padding: 20px;
     border: #F87400 2px solid;
     border-radius: 20px;
@@ -206,7 +200,7 @@ header nav a img {
 
 .cardEconomia{
     background-color: #fffeee;
-    margin: 0;
+    margin: 10% 0%;
     padding: 20px;
     border: #F87400 2px solid;
     border-radius: 20px;
@@ -257,6 +251,97 @@ button:active {
   transform: translateY(-2px) scale(0.97);
 }
 
+.mapa{
+    margin: 5%;
+}
+
+.mapa header{
+    background-color:#F87400;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20;
+    color: white;
+}
+.mapa header h3{
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+.mapa header h4{
+    margin: 2%;
+    text-align: center;
+    background-color: #fffeee;
+    color: #F87400;
+    padding: 5px;
+}
+.mapa header p{
+    text-align: center;
+}
+.informacoes-mapa{
+    background-color: #fffeee;
+    padding: 20px;
+    display: flex;
+}
+.imagem{
+    border-radius: 20px;
+    border: #eec5a2 1px solid;
+}
+.cards-mapa{
+    margin: 0;
+}
+.card-mapa{
+    background:
+        linear-gradient(#eec5a2, rgba(245, 242, 242, 0.55));
+    margin: 2%;
+    border-radius: 10px;
+    border: #eec5a2 1px solid;
+    padding: 10px;
+    height: 30%;
+}
+.card-mapa h4{
+    color: #F87400;
+    margin: 2%;
+    font-size: 20px;
+    text-align: center;
+}
+.card-mapa strong{
+    text-align: center;
+    font-size: 25px;
+    margin: 5%;
+}
+.destaques-mapa{
+    background-color: #eec5a2;
+    padding: 20px;
+    display: flex;
+}
+
+.destaques-mapa h3{
+    color: white;
+    background-color: #F87400;
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 20px;
+}
+
+.destaques-mapa ul{
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+.destaques-mapa li{
+    margin: 2%;
+}
+
+.card-mapa hr{
+    background-color: #F87400;
+}
+
 
 
 @media (max-width: 1000px) {
@@ -296,6 +381,20 @@ button:active {
 
     .cards{
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cardInformacao, .cardEconomia{
+        margin: 0% 0%;
+    }
+    .card-mapa h4{
+        font-size: 14px;
+    }
+    .card-mapa strong{
+        font-size: 20px;
+        margin: 0;
+    }
+    hr{
+        display: none;
     }
 }
 
@@ -338,6 +437,26 @@ button:active {
         justify-content: center;
         grid-template-columns: minmax(0, 1fr);
     }
+    .informacoes-mapa{
+        display: flex;
+        flex-direction: column;
+    }
+    .destaques-mapa{
+        flex-direction: column;
+        align-items: center;
+    }
+    .destaques-mapa h3{
+        margin: 5%;
+    }
+    .destaques-mapa ul{
+        margin: 5%;
+    }
 }
 
+@media (max-width: 480px) {
+    .mapa{
+        padding: 0 8px;
+        margin: 16px auto;
+    }
+}
 

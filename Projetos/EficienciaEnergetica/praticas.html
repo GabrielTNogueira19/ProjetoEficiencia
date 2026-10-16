@@ -1,20 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/EficienciaEnergetica/acess/LOGOTIPO_WEBSITEPROEJCT - Copia.png" type="image/x-icon">
-    <link rel="stylesheet" href="/EficienciaEnergetica/stylePraticas.css">
+
+    <link rel="shortcut icon"
+        href="/EficienciaEnergetica/acess/LOGOTIPO_WEBSITEPROEJCT - Copia.png"
+        type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="/EficienciaEnergetica/stylePraticas.css">
+
+    <script src="/EficienciaEnergetica/scriptPraticas.js" defer></script>
+
     <title>Boas Práticas - DevsDoZero</title>
 </head>
+
 <body>
     <header>
-        
         <nav>
             <a href="/EficienciaEnergetica/praticas.html">Boas Práticas</a>
             <a href="/EficienciaEnergetica/consumo.html">Consumo e Desperdício</a>
             <a href="/EficienciaEnergetica/metas.html">Metas e Indicadores</a>
-            <a href="/EficienciaEnergetica/index.html"><img src="/EficienciaEnergetica/acess/Sem nome (1000 x 1000 px)-Photoroom.png" alt="" class="logoMenu"></a>
+
+            <a href="/EficienciaEnergetica/index.html">
+                <img
+                    src="/EficienciaEnergetica/acess/Sem nome (1000 x 1000 px)-Photoroom.png"
+                    alt="Logo do site"
+                    class="logoMenu">
+            </a>
+
             <a href="/EficienciaEnergetica/contato.html">Contato</a>
             <a href="/EficienciaEnergetica/equipe.html">Sobre a equipe</a>
             <a href="/EficienciaEnergetica/calculadora.html">Calculadora de Consumo</a>
@@ -22,58 +38,155 @@
     </header>
 
     <main>
-        <section id="inicioContato" class="inicioC">
-            <h1>Boas Praticas</h1>
+        <section class="inicioC">
+            <h1>Boas Práticas</h1>
+
             <article class="textoObjetivo">
                 <h2>Objetivo</h2>
+                <hr>
+
                 <p>
-                    Reduzir o consumo e o desperdício de energia elétrica, diminuir os custos operacionais, aumentar a vida útil dos equipamentos e promover um ambiente de trabalho mais econômico e sustentável.
+                    Reduzir o consumo e o desperdício de energia elétrica,
+                    diminuir os custos operacionais, aumentar a vida útil
+                    dos equipamentos e promover um ambiente de trabalho
+                    mais econômico e sustentável.
                 </p>
             </article>
         </section>
 
-        <section class="mapa">
-            <figure>
-                <img src="/EficienciaEnergetica/acess/MapaPraticas.png" alt="Esquema sobre Boas Práticas">
-            </figure>
+        <!-- CARROSSEL -->
+        <section class="areaCarrossel" aria-label="Dicas de boas práticas">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img
+                        src="/EficienciaEnergetica/acess/Mapa mental de ideias simples azul/2.png"
+                        alt="Dica de eficiência energética 1">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img
+                        src="/EficienciaEnergetica/acess/Mapa mental de ideias simples azul/3.png"
+                        alt="Dica de eficiência energética 2">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img
+                        src="/EficienciaEnergetica/acess/Mapa mental de ideias simples azul/4.png"
+                        alt="Dica de eficiência energética 3">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img
+                        src="/EficienciaEnergetica/acess/Mapa mental de ideias simples azul/5.png"
+                        alt="Dica de eficiência energética 4">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img
+                        src="/EficienciaEnergetica/acess/Mapa mental de ideias simples azul/6.png"
+                        alt="Dica de eficiência energética 5">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img
+                        src="/EficienciaEnergetica/acess/Mapa mental de ideias simples azul/7.png"
+                        alt="Dica de eficiência energética 6">
+                </div>
+
+                <button class="prev" type="button"
+                    onclick="plusSlides(-1)" aria-label="Imagem anterior">
+                    &#10094;
+                </button>
+
+                <button class="next" type="button"
+                    onclick="plusSlides(1)" aria-label="Próxima imagem">
+                    &#10095;
+                </button>
+            </div>
+
+            <div class="indicadores" aria-label="Selecionar imagem">
+                <button class="dot" type="button" onclick="currentSlide(1)"
+                    aria-label="Mostrar imagem 1"></button>
+                <button class="dot" type="button" onclick="currentSlide(2)"
+                    aria-label="Mostrar imagem 2"></button>
+                <button class="dot" type="button" onclick="currentSlide(3)"
+                    aria-label="Mostrar imagem 3"></button>
+                <button class="dot" type="button" onclick="currentSlide(4)"
+                    aria-label="Mostrar imagem 4"></button>
+                <button class="dot" type="button" onclick="currentSlide(5)"
+                    aria-label="Mostrar imagem 5"></button>
+                <button class="dot" type="button" onclick="currentSlide(6)"
+                    aria-label="Mostrar imagem 6"></button>
+            </div>
         </section>
 
+        <!-- CARDS DE BOAS PRÁTICAS -->
         <section class="cardsResumo">
+
             <article class="resumo">
                 <h3>Desligar máquinas quando não estiverem em uso</h3>
                 <p>
-                    Desligar máquinas ociosas reduz o consumo de energia, diminui o desgaste dos equipamentos e evita gastos desnecessários.                </p>
+                    Desligar máquinas ociosas reduz o consumo de energia,
+                    diminui o desgaste dos equipamentos e evita gastos
+                    desnecessários.
+                </p>
             </article>
+
             <article class="resumo">
                 <h3>Utilizar iluminação eficiente</h3>
                 <p>
-                    Trocar lâmpadas antigas por LED e utilizar sensores de presença ajuda a economizar energia e melhora a iluminação do ambiente.
+                    Trocar lâmpadas antigas por LED e utilizar sensores
+                    de presença ajuda a economizar energia e melhora
+                    a iluminação do ambiente.
+                </p>
             </article>
+
             <article class="resumo">
                 <h3>Fazer manutenção dos equipamentos</h3>
                 <p>
-                    A manutenção preventiva evita desperdícios de energia, reduz custos com reparos e aumenta a vida útil dos equipamentos.
+                    A manutenção preventiva evita desperdícios de energia,
+                    reduz custos com reparos e aumenta a vida útil
+                    dos equipamentos.
                 </p>
             </article>
+
             <article class="resumo">
                 <h3>Evitar desperdícios de energia</h3>
                 <p>
-                    Evitar o consumo desnecessário de energia reduz os custos, melhora a eficiência e torna a operação mais sustentável.
+                    Evitar o consumo desnecessário de energia reduz
+                    os custos, melhora a eficiência e torna a operação
+                    mais sustentável.
                 </p>
             </article>
+
             <article class="resumo">
                 <h3>Utilizar equipamentos de forma correta</h3>
                 <p>
-                    Usar os equipamentos conforme as orientações do fabricante evita sobrecargas, reduz o consumo de energia e previne defeitos.
+                    Usar os equipamentos conforme as orientações
+                    do fabricante evita sobrecargas, reduz o consumo
+                    de energia e previne defeitos.
+                </p>
             </article>
+
             <article class="resumo">
                 <h3>Aproveitar a iluminação natural</h3>
                 <p>
-                    Utilizar a luz do sol durante o dia diminui a necessidade de iluminação artificial, economiza energia e melhora o ambiente de trabalho.
+                    Utilizar a luz do sol durante o dia diminui
+                    a necessidade de iluminação artificial, economiza
+                    energia e melhora o ambiente de trabalho.
+                </p>
             </article>
+
         </section>
-    <main>
-    <footer>
-    </footer>
+    </main>
+
+    <footer></footer>
 </body>
 </html>

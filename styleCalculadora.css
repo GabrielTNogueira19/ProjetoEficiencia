@@ -18,7 +18,7 @@ body::before {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url('/acess/img.png');
+    background-image: url('acess/img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

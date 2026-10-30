@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="acess/LOGOTIPO_WEBSITEPROEJCT - Copia.png" type="image/x-icon">
+    <title>Calculadora de Eficiência Energética - DevsDoZero</title>
+    <link rel="stylesheet" href="styleConsumo.css">
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <a href="praticas.html">Boas Práticas</a>
+            <a href="consumo.html">Consumo e Desperdício</a>
+            <a href="metas.html">Metas e Indicadores</a>
+            <a href="index.html"><img src="acess/Sem nome (1000 x 1000 px)-Photoroom.png" alt="" class="logoMenu"></a>
+            <a href="contato.html">Contato</a>
+            <a href="equipe.html">Sobre a equipe</a>
+            <a href="calculadora.html">Calculadora de Consumo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicioConsumo" class="inicioC">
+            <h1>Consumo e <br>Desperdício</h1>
+
+            <article class="transformeCard">
+                <h2>Transforme Consumo em Informação</h2>
+                <hr>
+                <p>Entender quando e onde a energia é usada ajuda a encontrar desperdicios, comparar periodos e priorizar melhorias. Explore os exemplos e faça um diagnostico rápido da sua rotina.</p>
+            </article>
+        </section>
+
+        <section class="entendoConsumo">
+
+            <h2>Como entender o consumo</h2>
+            <h4>Potência, tempo de uso e rotina de operção influenciam a quantidade de energia consumida.</h4>
+
+            <article class="secoes">
+                <article class="consumoCard">
+                    <h3>Consumo medido em kWh</h3>
+                    <hr>
+                    <p>O quilowatt-hora(kWh) representa a energia usada ao longo do tempo. Para uma estimativa simples, multiplique a potência em kW pelas horas do funcionamento.</p>
+                    <strong><p class="destaque">Consumo(kWh) = Potência(kW) x Tempo(h)</p></strong>
+                    <p>Exemplo: Um equipamento de 0,5kW ligado por 8 horas consome cerca de 4 kWh nesse período.</p>
+                </article>
+                <article class="listaCard">
+                    <h3>O que vale a pena acompanhar</h3>
+                    <hr>
+                    <ul>
+                        <li>Potência indicada na placa ou no manual.</li>
+                        <li>Horas de uso e períodos em espera.</li>
+                        <li>Consumo mensal e mudanças na produção.</li>
+                        <li>Diferenças entre turnos ou áreas semelhantes.</li>
+    
+                        <p>
+                            Compare períodos equivalentes: Mudanças no horário, clima ou volume produzido também influenciam nos resultados.
+                        </p>
+                    </ul>
+                </article>
+            </article>
+        </section>
+
+        <section class="usoTabela">
+            <h2>Uso Necessário X Horas Desperdiçadas</h2>
+            <h4>Exemplo didático para o mesmo equipamento de um kW. O uso correto depende das necessidades reais do processo.</h4>
+            <article class="tabelaConsumo">
+                <h3>Comparação de consumo em um dia</h3>
+                <table>
+                    <tr>
+                        <th>Situação</th>
+                        <th>Potência</th>
+                        <th>Tempo Ligado</th>
+                        <th>Consumo Estimado</th>
+                    </tr>
+                    <tr>
+                        <td>Uso necessário</td>
+                        <td>1 kW</td>
+                        <td>4 horas</td>
+                        <td>4 kWh</td>
+                    </tr>
+                    <tr>
+                        <td>Mais 4 horas sem necessidade</td>
+                        <td>1 kW</td>
+                        <td>8 horas</td>
+                        <td>8 kWh</td>
+                    </tr>
+                    </table>
+            </article>
+        </section>
+
+        <section class="diagnostico">
+            <h2>Diagnóstico rápido da rotina</h2>
+            <h4>Marque os sinais que você já observou. A lista ajuda a priorizar uma inspeção, mas não mede o consumo nem substitui uma avaliação técnica.</h4>
+            <form>
+                <article class="checks">
+                    <article class="boxCheck">
+                        <input type="checkbox" id="maquinasLigadas" name="maquinasLigadas" value="maquinasLigadas">
+                        <label for="maquinasLigadas">Máquinas ficam ligadas durante pausas?</label><br>
+                    </article>
+                    <article class="boxCheck">
+                        <input type="checkbox" id="iluminacao" name="iluminacao" value="iluminacao">
+                        <label for="iluminacao">Há iluminação em áreas vazias?</label><br>
+                    </article>
+                    <article class="boxCheck">
+                        <input type="checkbox" id="manutencao" name="manutencao" value="manutencao">
+                        <label for="manutencao">A manutenção está atrasada ou sem registro?</label><br>
+                    </article>
+                    <article class="boxCheck">
+                        <input type="checkbox" id="vazamentos" name="vazamentos" value="vazamentos">
+                        <label for="vazamentos">Existem vazamentos ou equipamentos em espera?</label><br>
+                    </article>
+                    
+                </article>
+                <button type="submit" class="botao">Limpar seleção</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    
+</body>
+</html>

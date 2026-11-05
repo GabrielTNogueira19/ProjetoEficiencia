@@ -26,7 +26,6 @@ body::before {
     pointer-events: none;
 }
 
-/* CABEÇALHO */
 
 header {
     width: 100%;
@@ -71,8 +70,6 @@ header nav a img {
     display: block;
 }
 
-/* TÍTULOS */
-
 h1,
 h2 {
     color: #F87400;
@@ -104,8 +101,6 @@ h2 {
         border-color: transparent;
     }
 }
-
-/* INTRODUÇÃO */
 
 .inicioC {
     display: grid;
@@ -168,8 +163,6 @@ h2 {
     line-height: 1.7;
 }
 
-/* CARROSSEL */
-
 .areaCarrossel {
     width: 100%;
     padding: 0 20px;
@@ -202,8 +195,6 @@ h2 {
     margin: 0 auto;
 }
 
-/* NÚMERO DO SLIDE */
-
 .numbertext {
     color: white;
     background-color: rgba(0, 0, 0, 0.65);
@@ -215,8 +206,6 @@ h2 {
     z-index: 2;
     border-radius: 0 0 8px 0;
 }
-
-/* BOTÕES DE NAVEGAÇÃO */
 
 .prev,
 .next {
@@ -253,8 +242,6 @@ h2 {
     background-color: #F87400;
 }
 
-/* INDICADORES */
-
 .indicadores {
     display: flex;
     justify-content: center;
@@ -283,8 +270,6 @@ h2 {
     transform: scale(1.2);
 }
 
-/* ANIMAÇÃO DO CARROSSEL */
-
 .fade {
     animation: aparecer 0.7s ease;
 }
@@ -298,8 +283,6 @@ h2 {
         opacity: 1;
     }
 }
-
-/* CARDS */
 
 .cardsResumo {
     counter-reset: pratica;
@@ -366,14 +349,10 @@ h2 {
     line-height: 1.65;
 }
 
-/* RODAPÉ */
-
 footer {
     min-height: 100px;
     background-color: #58585e;
 }
-
-/* TABLETS */
 
 @media (max-width: 900px) {
     header nav {
@@ -419,8 +398,6 @@ footer {
         gap: 16px;
     }
 }
-
-/* CELULARES */
 
 @media (max-width: 520px) {
     header {

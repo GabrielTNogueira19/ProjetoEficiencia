@@ -259,6 +259,7 @@ h2 {
     border: none;
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10%;
 }
 
 .dot:hover {
@@ -283,6 +284,10 @@ h2 {
         opacity: 1;
     }
 }
+/* 
+.titulo{
+    
+} */
 
 .cardsResumo {
     counter-reset: pratica;

@@ -1,0 +1,126 @@
+{
+  "residencial": [
+    {
+      "nome": "Geladeira (convencional)",
+      "consumo_w": 150
+    },
+    {
+      "nome": "Geladeira duplex / frost free",
+      "consumo_w": 250
+    },
+    {
+      "nome": "Ar-condicionado 9.000 BTU",
+      "consumo_w": 900
+    },
+    {
+      "nome": "Ar-condicionado 12.000 BTU",
+      "consumo_w": 1200
+    },
+    {
+      "nome": "Chuveiro elétrico",
+      "consumo_w": 5500
+    },
+    {
+      "nome": "Televisão LED",
+      "consumo_w": 100
+    },
+    {
+      "nome": "Computador desktop",
+      "consumo_w": 300
+    },
+    {
+      "nome": "Notebook",
+      "consumo_w": 65
+    },
+    {
+      "nome": "Máquina de lavar roupas",
+      "consumo_w": 700
+    },
+    {
+      "nome": "Micro-ondas",
+      "consumo_w": 1400
+    },
+    {
+      "nome": "Forno elétrico",
+      "consumo_w": 2000
+    },
+    {
+      "nome": "Ferro de passar",
+      "consumo_w": 1200
+    },
+    {
+      "nome": "Lâmpada LED",
+      "consumo_w": 10
+    },
+    {
+      "nome": "Ventilador",
+      "consumo_w": 100
+    },
+    {
+      "nome": "Secador de cabelo",
+      "consumo_w": 1800
+    }
+  ],
+  "industrial": [
+    {
+      "nome": "Motor elétrico trifásico pequeno",
+      "consumo_w": 1500
+    },
+    {
+      "nome": "Motor elétrico trifásico médio",
+      "consumo_w": 7500
+    },
+    {
+      "nome": "Compressor de ar",
+      "consumo_w": 3000
+    },
+    {
+      "nome": "Bomba centrífuga",
+      "consumo_w": 2200
+    },
+    {
+      "nome": "Ventilador/exaustor industrial",
+      "consumo_w": 1500
+    },
+    {
+      "nome": "Esteira transportadora",
+      "consumo_w": 1100
+    },
+    {
+      "nome": "Torno CNC",
+      "consumo_w": 7500
+    },
+    {
+      "nome": "Fresadora industrial",
+      "consumo_w": 5500
+    },
+    {
+      "nome": "Máquina de solda",
+      "consumo_w": 5000
+    },
+    {
+      "nome": "Prensa hidráulica",
+      "consumo_w": 7500
+    },
+    {
+      "nome": "Injetora de plástico",
+      "consumo_w": 15000
+    },
+    {
+      "nome": "Forno industrial elétrico",
+      "consumo_w": 12000
+    },
+    {
+      "nome": "Câmara fria / unidade de refrigeração",
+      "consumo_w": 5000
+    },
+    {
+      "nome": "Empilhadeira elétrica (durante recarga)",
+      "consumo_w": 3000
+    },
+    {
+      "nome": "Secador industrial",
+      "consumo_w": 10000
+    }
+  ]
+}

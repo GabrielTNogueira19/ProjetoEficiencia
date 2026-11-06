@@ -78,7 +78,7 @@ header nav a img {
 .carrosel {
     grid-column: 2;
     margin: 0;
-    transform: translateY(-50%);
+    top: 0;
     position: absolute;
     width: 500px;
     height: 1000px;

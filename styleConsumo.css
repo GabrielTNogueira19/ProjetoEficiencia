@@ -398,14 +398,17 @@ button:active {
 
     .tabelaConsumo th{
         padding: 5px;
+        font-size: 12px;
     }
 
     .tabelaConsumo td{
         padding: 0px;
+        font-size: 12px;
     }
 
     .tabelaConsumo{
         margin: 2% 5%;
+        font-size: 12px;
     }
 }
 
